@@ -1,0 +1,14 @@
+
+#Request sizes
+f= open("trace1_medium.tr", 'r')
+rows = f.readlines()
+RS={}
+
+for row in row:
+    row= row.split(" ")
+    req=row[2]
+
+if req in RS:
+    RS[req]+=1
+else:
+    RS[req]=1
